@@ -1,0 +1,92 @@
+<!doctype html>
+<html class="h-100" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Countries</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="body d-flex flex-column h-100">
+
+  <header class="site-header py-3 shadow-sm">
+    <div class="container-lg d-flex justify-content-between align-items-center">
+      <a class="site-header__logo font-weight-bold text-decoration-none" href="#">Where in the world?</a>
+      <button class="site-header__theme-toggler btn btn-sm btn-white shadow-none" type="button">
+        <span class="d-flex align-items-center">
+          <svg class="mr-1" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.553 13.815c-3.884 0-7.034-2.887-7.034-6.447 0-1.343.448-2.586 1.212-3.618-3.04.945-5.231 3.581-5.231 6.688 0 3.9 3.45 7.062 7.704 7.062 3.389 0 6.266-2.007 7.296-4.796a7.458 7.458 0 01-3.947 1.111z" stroke-width="1.25"/></svg>
+          <span class="site-header__theme-toggler-text">Dark mode</span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <main class="flex-grow-1 py-4 py-md-5">
+    <div class="container-lg country">
+      <a class="country__back d-inline-flex align-items-center shadow-sm py-2 px-3 rounded text-decoration-none" href="index.html">
+        <span>
+          <svg class="d-flex" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M6.46447 4.10744L7.64298 5.28596L3.75389 9.17504L18.6031 9.17504L18.6031 10.825L3.75389 10.825L7.64298 14.714L6.46447 15.8926L0.57191 10L6.46447 4.10744Z"/></svg>
+        </span>
+        <span class="ml-3">Back</span>
+      </a>
+
+      <div class="d-flex flex-column flex-md-row flex-sm-column pt-5">
+        <img class="w-100 d-block mb-5 col-md-5 mb-md-0 p-0 pr-4 " src="img/iceland.jpg" alt="flag germany" width="320" height="300">
+        <div class="col-md-7">
+          <div class="d-flex flex-column">
+            <h3 class="country__name font-weight-bold mb-4">Germany</h3>
+            <div class="d-flex flex-column flex-md-row">
+              <dl class="country__info-left mb-5 mb-md-4">
+                <div class="d-flex mb-2">
+                  <dt class="mr-2">Netive Name:</dt>
+                  <td>Germany</td>
+                </div>
+                <div class="d-flex mb-2">
+                  <dt class="mr-2">Population:</dt>
+                  <td>11.319.511</td>
+                </div>
+                <div class="d-flex mb-2">
+                  <dt class="mr-2">Region:</dt>
+                  <td>Europa</td>
+                </div>
+                <div class="d-flex mb-2">
+                  <dt class="mr-2">Sub Region: </dt>
+                  <td>Berlin</td>
+                </div>
+                <div class="d-flex">
+                  <dt class="mr-2">Capital: </dt>
+                  <td>Berlin</td>
+                </div>
+              </dl>
+              <dl class="country__info-left mb-5 mb-md-4 ml-md-auto">
+                <div class="d-flex mb-2">
+                  <dt class="mr-2">Top Level Domain:</dt>
+                  <td>.be</td>
+                </div>
+                <div class="d-flex mb-2">
+                  <dt class="mr-2">Currencies:</dt>
+                  <td>Euro</td>
+                </div>
+                <div class="d-flex">
+                  <dt class="mr-2">Language:</dt>
+                  <td>German</td>
+                </div>
+              </dl>
+            </div>
+          </div>
+          <div class="d-flex align-items-lg-center flex-column flex-lg-row">
+            <h5 class="country__info-left mb-3 flex-nowrap col-sm-8 col-md-4 col mb-lg-0 p-0">Border Countries:</h5>
+            <ul class="d-flex mb-0 list-unstyled w-100">
+              <li class="country__item col-3 col-lg-3 py-2 px-3 rounded mr-3 text-center">France</li>
+              <li class="country__item col-4 col-lg-4 py-2 px-3 rounded mr-3 text-center">Germany</li>
+              <li class="country__item col-4 py-2 px-3 rounded text-center">Netherlands</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>

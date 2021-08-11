@@ -1,0 +1,145 @@
+.search-form__input-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.search-form__search-icon {
+  position: absolute;
+  z-index: 1;
+  left: 32px;
+  top: calc(50% - 8px);
+}
+
+.search-form__input {
+  padding-left: 54px;
+}
+
+.body {
+  background-color: #f2f2f2;
+}
+
+.site-header {
+  background-color: #fff;
+}
+
+.body__dark .site-header {
+  background-color: #2B3844;
+}
+
+.body__dark {
+  background-color: #202c36;
+}
+
+.site-header__theme-toggler {
+  color: #111517;
+  fill: #fff;
+  stroke: #111517;
+}
+
+.site-header__logo {
+  color: #111517;
+}
+
+.body__dark .site-header__logo {
+  color: #fff;
+}
+
+.body__dark .site-header__theme-toggler {
+  color: #fff;
+  fill: #111517;
+  stroke: #fff;
+}
+
+.search-form__search-icon {
+  fill: #848484;
+}
+
+.search-form__input {
+  color: #848484;
+  background-color: #fff;
+}
+
+.body__dark .search-form__input {
+  color: #fff;
+  background-color: #2B3844;
+}
+
+.search-form__input::placeholder {
+  color: #848484;
+}
+
+.body__dark .search-form__input::placeholder {
+  color: #fff;
+}
+
+.body__dark .search-form__search-icon {
+  fill: #fff;
+}
+
+.img-fluid{
+  height: 160px;
+}
+
+.search-form__select {
+  color: #111517;
+  background-color: #fff;
+}
+
+.body__dark .search-form__select {
+  color: #fff;
+  background-color: #2B3844;
+}
+
+.countries-card {
+  background-color: #fff;
+  color: #111517;
+}
+
+.body__dark .countries-card {
+  background-color: #2B3844;
+  color: #fff;
+}
+
+.country__back {
+  color: #111517;
+  background-color: #fff;
+}
+
+.country__back span svg {
+  fill: #111517;
+}
+
+.body__dark .country__back {
+  color: #fff;
+  background-color: #2B3844;
+}
+
+.body__dark .country__back span svg {
+  fill: #fff;
+}
+
+.country__name {
+  color: #111517;
+}
+
+.body__dark .country__name {
+  color: #fff;
+}
+
+.country__info-left {
+  color: #111517;
+}
+
+.body__dark .country__info-left {
+  color: #fff;
+}
+
+.country__item {
+  color: #111517;
+  background-color: #fff;
+}
+
+.body__dark .country__item {
+  color: #fff;
+  background-color: #2B3844;
+}

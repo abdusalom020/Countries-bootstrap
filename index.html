@@ -1,17 +1,253 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="h-100" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>project</title>
-  <link rel="stylesheet" href="css/normalize-mini.css">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Countries</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="body d-flex flex-column h-100">
+
+  <header class="site-header py-3 shadow-sm">
+    <div class="container-lg d-flex justify-content-between align-items-center">
+      <a class="site-header__logo font-weight-bold text-decoration-none" href="#">Where in the world?</a>
+      <button class="site-header__theme-toggler btn btn-sm btn-white shadow-none" type="button">
+        <span class="d-flex align-items-center">
+          <svg class="mr-1" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.553 13.815c-3.884 0-7.034-2.887-7.034-6.447 0-1.343.448-2.586 1.212-3.618-3.04.945-5.231 3.581-5.231 6.688 0 3.9 3.45 7.062 7.704 7.062 3.389 0 6.266-2.007 7.296-4.796a7.458 7.458 0 01-3.947 1.111z" stroke-width="1.25"/></svg>
+          <span class="site-header__theme-toggler-text">Dark mode</span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <main class="flex-grow-1 py-4 py-md-5">
+
+    <section class="search-form mb-5">
+      <h2 class="sr-only">Countries search form</h2>
+      <div class="container-lg">
+        <form class="row justify-content-between" action="https://echo.htmlacademy.ru" method="GET">
+          <div class="search-form__input-wrapper col-sm-6 col-md-5 mb-4 mb-sm-0">
+            <svg class="search-form__search-icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.111 9.778H10.4l-.267-.267a5.564 5.564 0 001.423-3.733C11.556 2.578 8.978 0 5.778 0A5.766 5.766 0 000 5.778c0 3.2 2.578 5.778 5.778 5.778a5.564 5.564 0 003.733-1.423l.267.267v.711l4.444 4.445 1.334-1.334-4.445-4.444zm-5.333 0c-2.222 0-4-1.778-4-4s1.778-4 4-4 4 1.778 4 4-1.778 4-4 4z"/></svg>
+            <input class="search-form__input form-control border-0 shadow-sm" type="search" name="search" placeholder="Search for a country..." aria-label="Search" required>
+          </div>
+
+          <div class="col-7 col-sm-4 col-lg-3">
+            <select class="search-form__select form-control border-0 shadow-sm" name="region" aria-label="Region">
+              <option value="" selected disabled>Filter by Region</option>
+              <option value="africa">Africa</option>
+              <option value="america">America</option>
+              <option value="asia">Asia</option>
+              <option value="europe">Europe</option>
+              <option value="oceania">Oceania</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </section>
+
+
+    <section class="countries">
+      <h2 class="sr-only">Countries list</h2>
+      <div class="container-lg">
+        <ul class="row mb-0 list-unstyled">
+          <li class="col-sm-6 col-md-4 col-xl-3 mb-4">
+            <div class="countries-card position-relative rounded overflow-hidden shadow-sm">
+              <a class="d-block stretched-link" href="germany.html">
+                <img class="d-block img-fluid w-100" src="img/germany.jpg" alt="Flag of Germany" width="264" height="160">
+              </a>
+              <div class="p-4 pb-5">
+                <h3 class="h5 mb-3">Germany</h3>
+                <dl class="mb-0">
+                  <div class="d-flex flex-wrap">
+                    <dt class="mr-2">Population:</dt>
+                    <dd class="mb-0">323,947,000</dd>
+                  </div>
+                  <div class="d-flex flex-wrap">
+                    <dt class="mr-2">Region:</dt>
+                    <dd class="mb-0">Europa</dd>
+                  </div>
+                  <div class="d-flex flex-wrap">
+                    <dt class="mr-2">Capital:</dt>
+                    <dd class="mb-0">Baerlin</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </li>
+          <li class="col-sm-6 col-md-4 col-xl-3 mb-4">
+            <div class="countries-card position-relative rounded overflow-hidden shadow-sm">
+              <a class="d-block stretched-link" href="usa.html">
+                <img class="d-block img-fluid w-100" src="img/usa.jpg" alt="Flag of USA" width="264" height="160">
+              </a>
+              <div class="p-4 pb-5">
+                <h3 class="h5 mb-3">USA</h3>
+                <dl class="mb-0">
+                  <div class="d-flex flex-wrap">
+                    <dt class="mr-2">Population:</dt>
+                    <dd class="mb-0">323.947.000</dd>
+                  </div>
+                  <div class="d-flex flex-wrap">
+                    <dt class="mr-2">Region:</dt>
+                    <dd class="mb-0">Americas</dd>
+                  </div>
+                  <div class="d-flex flex-wrap">
+                    <dt class="mr-2">Capital:</dt>
+                    <dd class="mb-0">Washington.D.C</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </li>
+          <li class="col-sm-6 col-md-4 col-xl-3 mb-4">
+            <div class="countries-card position-relative rounded overflow-hidden shadow-sm">
+              <a class="d-block stretched-link" href="brazil.html">
+                <img class="d-block img-fluid w-100" src="img/brazil.jpg" alt="Flag of Brazil" width="264" height="160">
+              </a>
+              <div class="p-4 pb-5">
+                <h3 class="h5 mb-3">Brazil</h3>
+                <dl class="mb-0">
+                  <div class="d-flex flex-wrap">
+                    <dt class="mr-2">Population:</dt>
+                    <dd class="mb-0">206.135.893</dd>
+                  </div>
+                  <div class="d-flex flex-wrap">
+                    <dt class="mr-2">Region:</dt>
+                    <dd class="mb-0">Americas</dd>
+                  </div>
+                  <div class="d-flex flex-wrap">
+                    <dt class="mr-2">Capital:</dt>
+                    <dd class="mb-0">Brasilia</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </li>
+          <li class="col-sm-6 col-md-4 col-xl-3 mb-4">
+            <div class="countries-card position-relative rounded overflow-hidden shadow-sm">
+              <a class="d-block stretched-link" href="iceland.html">
+                <img class="d-block img-fluid w-100" src="img/iceland.jpg" alt="Flag of Iceland" width="264" height="160">
+              </a>
+              <div class="p-4 pb-5">
+                <h3 class="h5 mb-3">Iceland</h3>
+                <dl class="mb-0">
+                  <div class="d-flex flex-wrap">
+                    <dt class="mr-2">Population:</dt>
+                    <dd class="mb-0">334.300</dd>
+                  </div>
+                  <div class="d-flex flex-wrap">
+                    <dt class="mr-2">Region:</dt>
+                    <dd class="mb-0">Europa</dd>
+                  </div>
+                  <div class="d-flex flex-wrap">
+                    <dt class="mr-2">Capital:</dt>
+                    <dd class="mb-0">Reykjavik</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </li>
+          <li class="col-sm-6 col-md-4 col-xl-3 mb-4">
+            <div class="countries-card position-relative rounded overflow-hidden shadow-sm">
+              <a class="d-block stretched-link" href="afgon.html">
+                <img class="d-block img-fluid w-100" src="img/afgan.jpg" alt="Flag of Afghanistan" width="264" height="160">
+              </a>
+              <div class="p-4 pb-5">
+                <h3 class="h5 mb-3">Afghanistan</h3>
+                <dl class="mb-0">
+                  <div class="d-flex flex-wrap">
+                    <dt class="mr-2">Population:</dt>
+                    <dd class="mb-0">27.657.145</dd>
+                  </div>
+                  <div class="d-flex flex-wrap">
+                    <dt class="mr-2">Region:</dt>
+                    <dd class="mb-0">Asia</dd>
+                  </div>
+                  <div class="d-flex flex-wrap">
+                    <dt class="mr-2">Capital:</dt>
+                    <dd class="mb-0">Kabul</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </li>
+          <li class="col-sm-6 col-md-4 col-xl-3 mb-4">
+            <div class="countries-card position-relative rounded overflow-hidden shadow-sm">
+              <a class="d-block stretched-link" href="island.html">
+                <img class="d-block img-fluid w-100" src="img/island.jpg" alt="Flag of Island" width="264" height="160">
+              </a>
+              <div class="p-4 pb-5">
+                <h3 class="h5 mb-3">Aland Islands</h3>
+                <dl class="mb-0">
+                  <div class="d-flex flex-wrap">
+                    <dt class="mr-2">Population:</dt>
+                    <dd class="mb-0">28.875</dd>
+                  </div>
+                  <div class="d-flex flex-wrap">
+                    <dt class="mr-2">Region:</dt>
+                    <dd class="mb-0">Europa</dd>
+                  </div>
+                  <div class="d-flex flex-wrap">
+                    <dt class="mr-2">Capital:</dt>
+                    <dd class="mb-0">Mariehamn</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </li>
+          <li class="col-sm-6 col-md-4 col-xl-3 mb-4">
+            <div class="countries-card position-relative rounded overflow-hidden shadow-sm">
+              <a class="d-block stretched-link" href="alban.html">
+                <img class="d-block img-fluid w-100" src="img/albania.jpg" alt="Flag of Albania" width="264" height="160">
+              </a>
+              <div class="p-4 pb-5">
+                <h3 class="h5 mb-3">Albania</h3>
+                <dl class="mb-0">
+                  <div class="d-flex flex-wrap">
+                    <dt class="mr-2">Population:</dt>
+                    <dd class="mb-0">2.886.026</dd>
+                  </div>
+                  <div class="d-flex flex-wrap">
+                    <dt class="mr-2">Region:</dt>
+                    <dd class="mb-0">Europa</dd>
+                  </div>
+                  <div class="d-flex flex-wrap">
+                    <dt class="mr-2">Capital:</dt>
+                    <dd class="mb-0">Tirana</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </li>
+          <li class="col-sm-6 col-md-4 col-xl-3 mb-4">
+            <div class="countries-card position-relative rounded overflow-hidden shadow-sm">
+              <a class="d-block stretched-link" href="algeria.html">
+                <img class="d-block img-fluid w-100" src="img/algeria.jpg" alt="Flag of Algeria" width="264" height="160">
+              </a>
+              <div class="p-4 pb-5">
+                <h3 class="h5 mb-3">Algeria</h3>
+                <dl class="mb-0">
+                  <div class="d-flex flex-wrap">
+                    <dt class="mr-2">Population:</dt>
+                    <dd class="mb-0">40.400.000</dd>
+                  </div>
+                  <div class="d-flex flex-wrap">
+                    <dt class="mr-2">Region:</dt>
+                    <dd class="mb-0">Africa</dd>
+                  </div>
+                  <div class="d-flex flex-wrap">
+                    <dt class="mr-2">Capital:</dt>
+                    <dd class="mb-0">Algeries</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
   
-
-
   <script src="js/main.js"></script>
 </body>
 </html>
